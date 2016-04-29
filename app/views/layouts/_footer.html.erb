@@ -1,10 +1,58 @@
 <!-- Footer -->
-<footer>
+<footer >
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <p>Copyright &copy; Your Website 2014</p>
-            </div>
+            <section id="services" class="col-sm-12  col-md-5" >
+                <span> Our Services</span>
+                 <ul class="nav nav-pills nav-stacked">
+                    <li><%= link_to 'Courier Services', page_path('contact') %></li>
+                    <li><%= link_to ' Removal Services', page_path('contact') %></li>
+                    <hr class="visible-xs">
+                </ul>
+             </section>
+              <section id="customer" class="col-sm-12  col-md-4" >
+                 <span> Custoers</span>
+                   <ul class="nav nav-pills nav-stacked">
+                    <li><%= link_to 'Contact Us', page_path('contact') %></li>
+                    <li><%= link_to 'Post a Job', page_path('contact') %></li>
+                    <hr class="visible-xs">
+                 </ul>
+              </section>
+              <section id="soilal" class="col-sm-12  col-md-3 text-center">
+                  <span> Follow Us:</span>
+                       <ul class="list-inline">
+                                        <li><a href="#">
+                                                <span class="fa-stack fa-lg">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                                </span>
+                                            </a>
+                                         </li>
+                                         <li>
+                                            <a href="#">
+                                                <span class="fa-stack fa-lg">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                                </span>
+                                            </a>
+                                         </li>
+                                         <li>
+                                            <a href="#">
+                                                <span class="fa-stack fa-lg">
+                                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                                </span>
+                                            </a>
+                                </li>
+                         </ul>
+                    </section>
+             
         </div>
+        <div class="row">
+            <section class="text-center ">
+                 <i> Copyright &copy; Assimex Couriers Ltd 2016</i>
+            </section>
+        </div>
+        
     </div>
 </footer>
