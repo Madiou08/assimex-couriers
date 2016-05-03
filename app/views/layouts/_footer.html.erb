@@ -1,31 +1,82 @@
 <!-- Footer -->
-<footer >
+<footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+       
+        <section id="address" class="col-sm-5">
+          <span>Address:</span><br>
+          Purley Way<br>
+          Croydon, CR0 0XZ<br>
+           <strong><a href="mailto:name@example.com">hello@assimex-courier.co.uk</a></strong>
+          <hr class="visible-xs">
+        </section>
+        
+        
+         <section id="conditions" class="col-sm-4">
+          <span>Term & Conditions:</span><br>
+          <%= link_to 'Drivers', page_path('driver')%><br>
+          <%= link_to 'Customers', page_path('customer') %><br>
+          <hr class="visible-xs">
+        </section>
+        <!--
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
+        </section> -->
+        
+         <section id="soilal" class="col-xs-12  col-sm-3 text-center">
+            <span class="followus"> Social</span>
+                 <ul class="list-inline">
+                    <li><a href="#"><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+                    <li> <a href="#"><span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+                    <li><a href="#"><span class="fa-stack fa-lg">
+                      
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                         <i class="fa fa-linkedin  fa-stack-1x fa-inverse"></i></span></a></li>
+                </ul>
+        </section>
+        
+        
+         <div id ="copyright" class="row ">
+            <section class="col-xs-12 text-center ">
+                 <p> Copyright &copy; Assimex Ltd 2016</p>
+            </section>
+        </div> 
+      </div>
+    
+    
+    <!--
+    
     <div class="container">
         <div class="row">
-            <section id="services" class="col-sm-12  col-md-5" >
-                <span> Our Services</span>
+            <section id="services" class="col-xs-12 col-sm-7 col-sm-offset-0 col-md-5">
+                <span> Our services</span>
                  <ul class="nav nav-pills nav-stacked">
                     <li><%= link_to 'Courier Services', page_path('contact') %></li>
                     <li><%= link_to ' Removal Services', page_path('contact') %></li>
                     <hr class="visible-xs">
                 </ul>
              </section>
-              <section id="customer" class="col-sm-12  col-md-4" >
-                 <span> Custoers</span>
+              <section id="customer" class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4" >
+                 <span> Customers</span>
                    <ul class="nav nav-pills nav-stacked">
                     <li><%= link_to 'Contact Us', page_path('contact') %></li>
                     <li><%= link_to 'Post a Job', page_path('contact') %></li>
                     <hr class="visible-xs">
                  </ul>
               </section>
-              <section id="soilal" class="col-sm-12  col-md-3 text-center">
-                  <span> Follow Us:</span>
+              <section id="soilal" class="col-xs-12  col-sm-11 col-md-3 text-center">
+                  <span class="followus"> Follow us</span>
                        <ul class="list-inline">
-                                        <li><a href="#">
-                                                <span class="fa-stack fa-lg">
-                                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                                </span>
+                            <li><a href="#">
+                                 <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                 </span>
                                             </a>
                                          </li>
                                          <li>
@@ -50,9 +101,9 @@
         </div>
         <div class="row">
             <section class="text-center ">
-                 <i> Copyright &copy; Assimex Couriers Ltd 2016</i>
+                 <i> Copyright &copy; Assimex Ltd 2016</i>
             </section>
-        </div>
-        
+        </div> 
+        -->
     </div>
 </footer>
