@@ -14,6 +14,9 @@
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('https://c2.staticflickr.com/2/1624/26434643300_e99d770ea4_b.jpg') no-repeat center center fixed;
+   // background: url('bg-uk.jpg') no-repeat center center fixed;
+    //background: url('uk.gif') repeat center center fixed;
+    -webkit-background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -141,6 +144,7 @@ footer {
   background-color: #222;
   border-top: 0;
 }
+
 .panel-footer div.row {
   margin-bottom: 15px;
 }
@@ -240,6 +244,22 @@ footer p {
   }
   /* End Footer */
   
+    .navbar-default {
+        border: none;
+        background: #fff;
+        //background: rgba(255,255,255,0.9);
+        background-color: #631639;
+    }
+    .navbar-default .navbar-nav > li > a{
+         color: #000;
+         text-align: center;
+        &:hover{
+            color: white;
+        }
+
+    }
+
+  
 }
 /********** small devices only **********/
 @media screen and (min-width:768px) {
@@ -309,7 +329,8 @@ footer p {
     .navbar-default {
         border: none;
         background: #fff;
-        background: rgba(255,255,255,0.9);
+        //background: rgba(255,255,255,0.9);
+        background-color: #631639;
     }
 
     .nav>li>a {
@@ -326,11 +347,13 @@ footer p {
         line-height: normal;
     }
     .navbar-default .navbar-nav > li > a{
-        color: #000;
+         color: #000;
         &:hover{
             color: white;
         }
+
     }
+    
 
     .navbar-nav {
         display: table;

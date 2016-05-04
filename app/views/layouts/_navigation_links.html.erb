@@ -1,6 +1,6 @@
 <%# add navigation links to this file %>
-<li "<%= yield(:home) %>"> <%= link_to 'Home', root_path %> </li>
-<li "<%= yield(:about) %>"> <%= link_to 'About', page_path('about') %></li>
-<li "<%= yield(:service) %>"><%= link_to 'Services', page_path('service') %></li>
-<li "<%= yield(:vacancy) %>"><%= link_to 'Vacancies', page_path('vacancy') %></li>
-<li "<%= yield(:contact) %>"><%= link_to 'Contact', new_contact_path %></li>
+<li class = "<%= yield(:home)%>"> <%= link_to 'Home', root_path %> </li>
+<li class = "<%= yield(:about)%>"> <%= link_to 'About', page_path('about') %></li>
+<li class = "<%= yield(:service)%>"><%= link_to 'Services', page_path('service') %></li>
+<li class = "<%= yield(:vacancy)%>"><%= link_to 'Vacancies', page_path('vacancy') %></li>
+<li class = "<%= yield(:contact)%>"><%= link_to 'Contacts', new_contact_path %></li>

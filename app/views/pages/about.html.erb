@@ -1,8 +1,8 @@
 <% provide(:title, "About") %>
-<% provide(:services, "active") %>
+<% provide(:about, "active") %>
 <div class="brand">Assimex Couriers</div>
  <%= link_to image_tag(image_url("https://c2.staticflickr.com/2/1466/26178367953_cf67755e64.jpg") , width:"75px"), "/"%>
-<div class="address-bar">3481 Melrose Place | Croydon Surrey, CR0 5CN | 123.456.7890</div>
+<div class="address-bar">3481 Melrose Place | Croydon Surrey, CR0 5CN | <%= link_to '07429203168', 'tel:07429203168', target:"_blank" %></div>
 
 <%= render 'layouts/navigation' %>
 
