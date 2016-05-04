@@ -7,10 +7,11 @@ class Contact
 
   validates_presence_of :name
   validates_presence_of :email
-  validates_presence_of :phone_number, format: { with: /\d{3}-\d{3}-\d{4}/, message: "bad format" }
-  validates_presence_of :content
   validates_format_of :email,
-    with: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i
-  validates_length_of :content, :maximum => 500
+  with: /\A[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}\z/i
+  #validates_presence_of :phone_number,
+  #with: /\d[0-9]\)*\z/ , :message => "Only positive number without spaces are allowed"
+  validates_presence_of :content
+  validates_length_of :content, :maximum => 1500
 
 end

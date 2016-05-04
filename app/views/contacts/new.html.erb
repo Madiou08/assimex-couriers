@@ -18,9 +18,9 @@
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus repudiandae cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum sapiente optio deleniti consequuntur eos voluptatem.</p>
                
-            
-                    <div class="contact_form">
-                      <%= simple_form_for @contact, :url => new_visitor_path do |form| %>
+      
+                    <div class=" contact_form">
+                      <%= simple_form_for @contact do |form| %>
                         <%= form.error_notification %>
                         <%= form.input :name, autofocus: true %>
                         <%= form.input :email %>
@@ -29,6 +29,21 @@
                         <%= form.button :submit, 'Submit', class: 'submit' %>
                       <% end %>
                     </div>
+                    
+                    
+         <!--                
+                    
+    <%= simple_form_for @contact do |f| %>
+
+        <%= f.input :email, placeholder: 'Enter email' %>
+
+        <%= f.input :password, placeholder: 'Password' %>
+
+       <%= f.input :file, as: :file, wrapper: :vertical_file_input %>
+      <%= f.button :submit %>
+  <% end %> -->
+
+
             <!--   
                
                 <form role="form">
